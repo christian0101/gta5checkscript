@@ -68,7 +68,7 @@ NvPmApi.Core.win64.dll
 3677696
 4e434120a43b9c01c154a9deca71948d3ae1a3f3eb8be16d84e45a323fcc17af
 GPUPerfAPIDX11-x64.dll
-8660480
+Verified 15 April 2015
 112a793d76a840a4bf0e5ea71c9a938a78e67b1514e5bfe856627913b622f156
 GFSDK_TXAA_AlphaResolve.win64.dll
 94720
@@ -86,7 +86,7 @@ d3dcompiler_46.dll
 3873208
 dde5c2d0ff52f07017ea91e833f3baeca74661539599795df2e8096218abcca7
 common.rpf
-27705344
+Hash verified 15 April 2015
 45b6b0c39a585f5f42f56dfe18dbd40223945edfd4a9fe4b397d5f517bbe6156
 bink2w64.dll
 435712

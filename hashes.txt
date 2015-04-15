@@ -349,3 +349,6 @@ e7574ac1e285df920b445360cfc8b1a025b9db97f5228ed9b2abc2d8d66405c9
 x64\data\errorcodes\american.txt
 18693
 e7574ac1e285df920b445360cfc8b1a025b9db97f5228ed9b2abc2d8d66405c9
+update/x64/dlcpacks/mpchristmas2/dlc.rpf
+Verified 15 April 2015
+6e78664135de4ada86ab53595b41675650a34c8a4cd1c3cbec669abad2376ce9

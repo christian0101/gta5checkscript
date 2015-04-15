@@ -1,6 +1,11 @@
 import hashlib
 import os
 
+ignoreFiles = ['Grand Theft Auto V\commandline.txt']
+
+with open('checkGta.log', 'w') as log:
+  log.write('')
+
 gtaDirectory = 'Grand Theft Auto V'
 
 hashList = {}
@@ -54,8 +59,8 @@ for dirpath, dirnames, filenames in os.walk(gtaDirectory):
         if fileHash == gtaHash:
           status = '%s OK!' % gtaFile
 
-          with open('checkGta.log', 'w') as log:
-            log.writeline(status)
+          with open('checkGta.log', 'a') as log:
+            log.write(status + '\n')
           print status
 
           okayFiles += 1
@@ -63,18 +68,18 @@ for dirpath, dirnames, filenames in os.walk(gtaDirectory):
           status = '%s CORRUPT!' % gtaFile
           expected = 'Expected \'%s\' but found \'%s\'' % (fileHash, gtaHash)
 
-          with open('checkGta.log', 'w') as log:
-            log.writeline(status)
-            log.writeline(expected)
+          with open('checkGta.log', 'a') as log:
+            log.write(status + '\n')
+            log.write(expected + '\n')
           print status
           print expected
 
           badFiles += 1
-    else:
+    elif gtaFile not in ignoreFiles:
       status = 'Unknown file: %s' % gtaFile
 
-      with open('checkGta.log', 'w') as log:
-        log.writeline(status)
+      with open('checkGta.log', 'a') as log:
+        log.write(status + '\n')
       print status
 
       unknownFiles += 1

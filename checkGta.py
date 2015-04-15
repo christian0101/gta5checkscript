@@ -1,7 +1,10 @@
 import hashlib
 import os
 
-ignoreFiles = ['Grand Theft Auto V\commandline.txt']
+ignoreFiles = ['Grand Theft Auto V\commandline.txt',
+               'Grand Theft Auto V\GTA5.exe',
+               'Grand Theft Auto V\GTAVLauncher.exe',
+               'Grand Theft Auto V\PlayGTAV.exe']
 
 with open('checkGta.log', 'w') as log:
   log.write('')
@@ -75,7 +78,8 @@ for dirpath, dirnames, filenames in os.walk(gtaDirectory):
           print expected
 
           badFiles += 1
-    elif gtaFile not in ignoreFiles:
+    elif gtaFile not in ignoreFiles and gtaFile.find('.part') == -1 and gtaFile.find('.hash') == -1:
+
       status = 'Unknown file: %s' % gtaFile
 
       with open('checkGta.log', 'a') as log:
@@ -85,3 +89,6 @@ for dirpath, dirnames, filenames in os.walk(gtaDirectory):
       unknownFiles += 1
 
 print '%s files OK, %s files CORRUPT, %s files unknown' % (okayFiles, badFiles, unknownFiles)
+
+enter = raw_input('Press ENTER to complete the script...')
+print 'Script complete.'

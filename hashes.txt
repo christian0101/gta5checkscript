@@ -134,7 +134,7 @@ update\x64\data\errorcodes\american.txt
 19184
 e1d57d35539826e4671bcb683e8b0236760340bd91db52016a93adda93f999d9
 update\x64\dlcpacks\mppatchesng\dlc.rpf
-437524480
+Verified 15 April 2015
 903165ee1bace898f3de5985448074257f1242450d07b1ecbe6fe810781bec79
 update\x64\dlcpacks\patchday1ng\dlc.rpf
 467415040

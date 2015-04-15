@@ -15,7 +15,7 @@ with open('hashes.txt', 'r') as hashFile:
       else:
         fileName = os.path.join(gtaDirectory, line)
       lineType += 1
-      print fileName
+      #print fileName
     elif lineType == 1:
       # Skip this line
       lineType += 1
@@ -52,14 +52,31 @@ for dirpath, dirnames, filenames in os.walk(gtaDirectory):
       if gtaFile in hashList:
         fileHash = hashList[gtaFile]
         if fileHash == gtaHash:
-          print '%s OK!' % gtaFile
+          status = '%s OK!' % gtaFile
+
+          with open('checkGta.log', 'w') as log:
+            log.writeline(status)
+          print status
+
           okayFiles += 1
         else:
-          print '%s CORRUPT!' % gtaFile
-          print 'Expected \'%s\' but found \'%s\'' % (fileHash, gtaHash)
+          status = '%s CORRUPT!' % gtaFile
+          expected = 'Expected \'%s\' but found \'%s\'' % (fileHash, gtaHash)
+
+          with open('checkGta.log', 'w') as log:
+            log.writeline(status)
+            log.writeline(expected)
+          print status
+          print expected
+
           badFiles += 1
     else:
-      print 'Unknown file: %s' % gtaFile
+      status = 'Unknown file: %s' % gtaFile
+
+      with open('checkGta.log', 'w') as log:
+        log.writeline(status)
+      print status
+
       unknownFiles += 1
 
 print '%s files OK, %s files CORRUPT, %s files unknown' % (okayFiles, badFiles, unknownFiles)

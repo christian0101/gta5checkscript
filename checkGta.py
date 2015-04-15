@@ -1,6 +1,7 @@
 import hashlib
 import os
 
+# Configure this to the name of the install directory
 gtaDirectory = 'Grand Theft Auto V'
 
 # Initialize a list of files to ignore based on the install directory

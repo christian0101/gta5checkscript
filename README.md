@@ -13,13 +13,15 @@ then you need to run the script from
 
 `C:\Program Files\Rockstar Games\`
 
-Execute using command prompt and Python. No dependencies required. Developed against Python 2.7.9.
+Execute using command prompt and Python. You may need to run as Administrator.
+
+No dependencies required. Developed against Python 2.7.9.
 
 # What to do with corrupt files
 
-Rename the file so that the launcher downloads the file again. You must ensure that the download process does not get interrupted so that the launcher will properly verify the file when it's compelted the download. If the file fails verification, the launcher should repeat the process until the file is valid.
+Rename the file so that the launcher downloads the file again. You must ensure that the download process does not get interrupted so that the launcher will properly verify the file when it's compelted the download. If the file fails verification, the launcher should repeat the process until the file is valid. I recommend only renaming one or two files at a time to make sure the launcher has time to fully download and verify the files.
 
-Once all files are downloaded, run the script once more to verify the results. The launcher does not verify files on launch, it only checks that a file exists.
+Once all files are downloaded, run the script once more to verify the results. The launcher does not verify files on launch, it only checks that a file exists and that it's the proper size. However, all files are pre-allocated before download, so if the update process is interrupted then the launcher will never check if the file is valid or not.
 
 # What to do with unknown files
 

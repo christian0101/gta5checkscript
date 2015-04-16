@@ -266,10 +266,10 @@ x64\audio\sfx\RADIO_03_HIPHOP_NEW.rpf
 356595712
 bb9960b927c60d440fd0613676f8c8be9aca065ba7c69534eba406db42eefd4f
 x64\audio\sfx\RADIO_02_POP.rpf
-502478848
+Verified 16 April 2015
 8dae16e24dc391c37693b0c380f61ad74023761040fa6be665b8797802365aa3
 x64\audio\sfx\RADIO_01_CLASS_ROCK.rpf
-475279360
+Verified 16 April 2015
 f01ffae12e82f279a221d1fbbdb7a4b30c76a06a7e0b66def432718a68d2cc39
 x64\audio\sfx\WEAPONS_PLAYER.rpf
 3883008
@@ -353,11 +353,11 @@ update\x64\dlcpacks\mpchristmas2\dlc.rpf
 Verified 15 April 2015
 6e78664135de4ada86ab53595b41675650a34c8a4cd1c3cbec669abad2376ce9
 update\x64\dlcpacks\mpheist\dlc.rpf
-Verified 15 April 2015
+Verified 16 April 2015
 17c2fd809949f00107a71d7dbcd5533727f080891d3723417b2e25c53f9b7ad5
 update\x64\dlcpacks\patchday2bng\dlc.rpf
 Verified 15 April 2015
 7f446ff14489e3fb83ca8334f41972b7cbf0f58e7df3a20a2818451873fc576b
 update\x64\dlcpacks\patchday3ng\dlc.rpf
-Verified 15 April 2015
+Verified 16 April 2015
 1ea4b072b9b737470f73d578079c6616f3194bd9985bfe2347802c28a6cd135e

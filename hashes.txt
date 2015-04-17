@@ -197,7 +197,7 @@ x64\audio\sfx\SS_NP.rpf
 Verified 16 April 2015
 36105990c33b5d7594c706274780dc0d1cbed48a5de5030b7dfdad7a3c28d25b
 x64\audio\sfx\SS_GM.rpf
-396892160
+Verified 16 April 2015
 714880ec39abbd7b791f3407b8d3b810c0ce15c540d6b5c2c2c9cac7fb3d7b8d
 x64\audio\sfx\SS_FF.rpf
 767225856

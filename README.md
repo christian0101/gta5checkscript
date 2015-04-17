@@ -1,5 +1,10 @@
 # gta5checkscript
-A Python script that will check all files in a GTA V PC install to verify hashes and output file status of OK, CORRUPT, or Unknown.
+
+This is a Python script that will check all files in a GTA V PC install to verify hashes and output file status of OK, CORRUPT, or Unknown.
+
+This script will *NOT* modify any files, or remove corrupt files. It is for information only.
+
+If you do think that your file is corrupt, rename the file and restart GTA V. The launcher will download a new file and verify the hash after download is complete.
 
 # Execution
 

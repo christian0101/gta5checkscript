@@ -27,7 +27,7 @@ for ignoreFile in ignoreFiles:
 
 # Initialize the log file, or clear it if it's present
 logFile = os.path.expanduser('~\checkGta.log')
-print 'Logging all output to: %s' % logFile
+print ('Logging all output to: %s' % logFile)
 with open(logFile, 'w') as log:
   log.write('')
 
@@ -89,7 +89,7 @@ for dirpath, dirnames, filenames in os.walk(gtaDirectory):
         status = '%s OK!' % gtaFile
         with open(logFile, 'a') as log:
           log.write(status + '\n')
-        print status
+        print (status)
         okayFiles += 1
 
       else:
@@ -98,8 +98,8 @@ for dirpath, dirnames, filenames in os.walk(gtaDirectory):
         with open(logFile, 'a') as log:
           log.write(status + '\n')
           log.write(expected + '\n')
-        print status
-        print expected
+        print (status)
+        print (expected)
         badFiles += 1
 
     elif gtaFile not in ignoreList and gtaFile.find('.part') == -1 and gtaFile.find('.hash') == -1:
@@ -107,12 +107,12 @@ for dirpath, dirnames, filenames in os.walk(gtaDirectory):
       status = 'Unknown file: %s' % gtaFile
       with open(logFile, 'a') as log:
         log.write(status + '\n')
-      print status
+      print (status)
       unknownFiles += 1
 
 # All files processed, output results
-print '%s files OK, %s files CORRUPT, %s files unknown' % (okayFiles, badFiles, unknownFiles)
+print ('%s files OK, %s files CORRUPT, %s files unknown' % (okayFiles, badFiles, unknownFiles))
 
 # Pause for the folks that double-click
-enter = raw_input('Press ENTER to complete the script...')
-print 'Script complete.'
+enter = input('Press ENTER to complete the script...')
+print ('Script complete.')

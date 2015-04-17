@@ -6,6 +6,8 @@ This script will *NOT* modify any files, or remove corrupt files. It is for info
 
 If you do think that your file is corrupt, rename the file and restart GTA V. The launcher will download a new file and verify the hash after download is complete.
 
+No dependencies required. Developed against Python 2.7.9.
+
 # Execution
 
 Place the `checkGta.py` file in the directory above your GTA V install.
@@ -19,8 +21,6 @@ then you need to run the script from
 `C:\Program Files\Rockstar Games\`
 
 Execute using command prompt and Python. You may need to run as Administrator.
-
-No dependencies required. Developed against Python 2.7.9.
 
 # What to do with corrupt files
 
